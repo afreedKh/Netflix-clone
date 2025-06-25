@@ -15,13 +15,12 @@ interface Movie {
 const TitleCards = ({ title, category }: TitleCardsProps) => {
   const [apiData, setApiData] = useState<Movie[]>([]);
   const wheelRef = useRef<HTMLDivElement | null>(null);
-
+  
   const options = {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization:
-        `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
+      Authorization: `${import.meta.env.VITE_TMDB_TOKEN}`,
     },
   };
 

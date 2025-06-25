@@ -24,7 +24,7 @@ const Player = () => {
     headers: {
       accept: "application/json",
       Authorization:
-        `Bearer ${import.meta.env.VITE_TMDB_TOKEN}`,
+        `${import.meta.env.VITE_TMDB_TOKEN}`,
     },
   };
 
